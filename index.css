@@ -1,0 +1,8 @@
+/* footer */
+.footer-links {
+    color: #fff;
+}
+
+.linksOnFotter a + a {
+    margin-left: 10px;
+}
