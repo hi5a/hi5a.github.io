@@ -1,0 +1,78 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    CEO with four years at the helm of Nordic Game Lab, renowned for applying visionary leadership 
+    and robust analytical decision-making. Expert in spearheading projects with cross-functional 
+    teams to tackle complex challenges, consistently driving forward company objectives and 
+    innovation. Committed to fostering a culture of collaboration and continuous improvement within 
+    the tech industry.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Title Name"
+      subtitle="2022 to 2026 at [Study Center Name], [City], [Country]"
+    />
+    <TimeLineElement
+      title="Title Name"
+      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="CEO at Nordic Game Lab"
+      subtitle="From 2020 to present at Nordic Game Lab, LLC."
+    >
+    • Utilizing analytical skills for decision-making
+    • Applying visionary leadership
+    • Collaborating with cross-functional teams
+    • Solving complex problems
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="#" target="_blank"> Certification Name (with link)</a>
+    </li>
+    <li>
+      <a href="#" target="_blank"> Certification Name (with link)</a>
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>Strategic Planning</li>
+    <li>Data Analysis</li>
+    <li>Communication</li>
+    <li>Innovation</li>
+    <li>Problem Solving</li>
+    <li>Team Building</li>
+    <li>Project Management</li>
+    <li>Software development</li>
+    <li>Leadership</li>
+  </ul>
+</BaseLayout>
